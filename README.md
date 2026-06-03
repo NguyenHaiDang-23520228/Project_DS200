@@ -233,6 +233,9 @@ Colab notebooks cài thêm: `kaggle`, `matplotlib`.
 
 ## Tác giả
 
-**DS200.Q21** 
-— 23520228 - Nguyễn Hải Đăng
-- 23520055 - Nguyễn Bi Anh
+**DS200.Q21**
+
+| MSSV | Họ và tên |
+|------|-----------|
+| 23520228 | Nguyễn Hải Đăng |
+| 23520055 | Nguyễn Bi Anh |
