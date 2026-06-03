@@ -80,7 +80,7 @@ DS200.Q21/
 ├── README.md                 # File này
 ├── data.ipynb                # EDA Synapse (local)
 ├── demo.ipynb                # Pipeline chính: TransUNet + U-Net + so sánh
-├── huong3.ipynb              # Ablation n_skip = 0, 1 (vs 3 từ demo)
+├── ablationskip.ipynb              # Ablation n_skip = 0, 1 (vs 3 từ demo)
 ├── attentiongate.ipynb       # TransUNet_AttnSkip (Attention Gate)
 ├── data/
 │   └── manifest.csv
@@ -102,10 +102,10 @@ DS200.Q21/
 |----------|----------|------------|
 | **`data.ipynb`** | Thống kê 2211 train / 12 test, label map, visualize slice | Local |
 | **`demo.ipynb`** | Setup Colab → train TransUNet 150ep → train/test U-Net → bảng + overlay | **Google Colab (GPU)** |
-| **`huong3.ipynb`** | Ablation `--n_skip 0` và `1` (60ep), bảng + biểu đồ vs `n_skip=3` | Colab |
+| **`ablationskip.ipynb`** | Ablation `--n_skip 0` và `1` (60ep), bảng + biểu đồ vs `n_skip=3` | Colab |
 | **`attentiongate.ipynb`** | `TransUNet_AttnSkip`, train 150ep, so với demo | Colab |
 
-> **Lưu ý:** `demo.ipynb`, `huong3.ipynb`, `attentiongate.ipynb` được thiết kế cho Colab (`/content/...`). Chạy local cần chỉnh đường dẫn data và checkpoint.
+> **Lưu ý:** `demo.ipynb`, `ablationskip.ipynb`, `attentiongate.ipynb` được thiết kế cho Colab (`/content/...`). Chạy local cần chỉnh đường dẫn data và checkpoint.
 
 ---
 
@@ -182,7 +182,7 @@ python test.py \
   --max_epochs 150
 ```
 
-Ablation `n_skip`: xem **`huong3.ipynb`** hoặc đổi `--n_skip 0` / `1`.
+Ablation `n_skip`: xem **`ablationskip.ipynb`** hoặc đổi `--n_skip 0` / `1`.
 
 ---
 
@@ -233,6 +233,9 @@ Colab notebooks cài thêm: `kaggle`, `matplotlib`.
 
 ## Tác giả
 
-**DS200.Q21** 
-— 23520228 - Nguyễn Hải Đăng
-- 23520055 - Nguyễn Bi Anh
+**DS200.Q21**
+
+| MSSV | Họ và tên |
+|------|-----------|
+| 23520228 | Nguyễn Hải Đăng |
+| 23520055 | Nguyễn Bi Anh |
